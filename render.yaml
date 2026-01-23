@@ -40,3 +40,5 @@ services:
     envVars:
       - key: PORT
         value: 8501
+      - key: GEMINI_API_KEY
+        sync: false
