@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  developer-portfolio:
+    build: 
+      context: ./apps/developer-portfolio
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      - NODE_ENV=production
+
+  learning-style-ai:
+    build:
+      context: ./apps/learning-style-ai
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    restart: always
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+
+  bus-fleet-manager:
+    build:
+      context: ./apps/bus-fleet-manager
+      dockerfile: Dockerfile
+    ports:
+      - "3002:5000" # Flask usually runs on 5000 internally
+    restart: always
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - FLASK_ENV=development
+
+  qa-chatbot:
+    build:
+      context: ./apps/qa-chatbot
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3003"
+    restart: always
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+
+#  shadow-removal:
+#    build:
+#      context: ./apps/shadow-removal
+#      dockerfile: Dockerfile
+#    ports:
+#      - "3004:8501"
