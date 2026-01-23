@@ -11,7 +11,7 @@
         "lint": "turbo run lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
     },
-    "devDependencies": {
+    "dependencies": {
         "prettier": "latest",
         "shx": "^0.4.0",
         "turbo": "latest"
