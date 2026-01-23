@@ -8,9 +8,9 @@ const appDir = path.join(__dirname, '../apps/developer-portfolio');
 const rootDist = path.join(__dirname, '../dist');
 
 try {
-    // 1. Install Dependencies at ROOT (Preserve workspace links)
-    console.log("📦 Installing Dependencies at Root (including dev)...");
-    execSync('npm install --include=dev', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    // 1. Install Dependencies - SKIPPED (Handled by root install/postinstall)
+    // console.log("📦 Installing Dependencies at Root...");
+    // execSync('npm install --include=dev', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
 
     // 2. Build the App
     console.log("🏗️ Building Portfolio...");
