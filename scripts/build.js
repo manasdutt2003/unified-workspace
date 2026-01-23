@@ -18,7 +18,10 @@ try {
     console.log("🏗️ (3/3) Building Portfolio...");
     execSync('npm run build', { cwd: appDir, stdio: 'inherit' });
 
-    console.log("🏁 Build finished. Output should be in apps/developer-portfolio/dist");
+    console.log("✅ Build finished. Checking output folder:");
+    console.log(fs.readdirSync(path.join(appDir, 'dist'))); // Verify it exists!
+
+    console.log("🏁 Output should be in apps/developer-portfolio/dist");
 
 } catch (error) {
     console.error("❌ Build Failed:", error.message);
