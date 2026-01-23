@@ -6,14 +6,15 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "turbo run build",
+        "build": "turbo run build --filter=@apps/developer-portfolio && shx rm -rf dist && shx cp -r apps/developer-portfolio/dist dist",
         "dev": "turbo run dev",
         "lint": "turbo run lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
     },
     "devDependencies": {
-        "turbo": "latest",
-        "prettier": "latest"
+        "prettier": "latest",
+        "shx": "^0.4.0",
+        "turbo": "latest"
     },
     "packageManager": "npm@10.2.4"
 }
