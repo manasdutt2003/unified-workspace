@@ -8,9 +8,13 @@ const appDir = path.join(__dirname, '../apps/developer-portfolio');
 const rootDist = path.join(__dirname, '../dist');
 
 try {
-    // 1. Install Dependencies - SKIPPED (Handled by root install/postinstall)
-    // console.log("📦 Installing Dependencies at Root...");
-    // execSync('npm install --include=dev', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    // 1. Install Dependencies at ROOT (Essential for Monorepo links)
+    console.log("📦 Installing Dependencies at Root...");
+    execSync('npm install --include=dev', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+
+    // 2. Install Dependencies in App (Essential for 'vite' binary)
+    console.log("📦 Installing Dependencies in App...");
+    execSync('npm install --include=dev', { cwd: appDir, stdio: 'inherit' });
 
     // 2. Build the App
     console.log("🏗️ Building Portfolio...");
