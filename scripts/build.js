@@ -8,9 +8,9 @@ const appDir = path.join(__dirname, '../apps/developer-portfolio');
 const rootDist = path.join(__dirname, '../dist');
 
 try {
-    // 1. Install Dependencies in App
+    // 1. Install Dependencies in App (Force devDeps because Vercel prunes them in PROD, but Vite needs them to build)
     console.log("📦 Installing Dependencies in App...");
-    execSync('npm install', { cwd: appDir, stdio: 'inherit' });
+    execSync('npm install --include=dev', { cwd: appDir, stdio: 'inherit' });
 
     // 2. Build the App
     console.log("🏗️ Building Portfolio...");
