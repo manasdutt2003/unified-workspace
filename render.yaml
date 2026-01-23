@@ -3,7 +3,7 @@ services:
   - type: web
     name: vit-qa-chatbot
     env: docker
-    root: apps/qa-chatbot
+    rootDir: apps/qa-chatbot
     plan: free
     branch: main
     region: singapore
@@ -17,7 +17,7 @@ services:
   - type: web
     name: vit-bus-manager
     env: docker
-    root: apps/bus-fleet-manager
+    rootDir: apps/bus-fleet-manager
     plan: free
     branch: main
     region: singapore
@@ -33,7 +33,7 @@ services:
   - type: web
     name: learning-style-ai
     env: docker
-    root: apps/learning-style-ai
+    rootDir: apps/learning-style-ai
     plan: free
     branch: main
     region: singapore
