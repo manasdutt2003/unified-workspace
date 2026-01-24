@@ -14,9 +14,9 @@ try {
     console.log("📦 (2/3) Installing App Dependencies...");
     execSync('npm install --include=dev', { cwd: appDir, stdio: 'inherit' });
 
-    // 3. Build the App
+    // 3. Build the App (Explicitly run Vite to avoid recursive 'npm run build' loop)
     console.log("🏗️ (3/3) Building Portfolio...");
-    execSync('npm run build', { cwd: appDir, stdio: 'inherit' });
+    execSync('npx vite build', { cwd: appDir, stdio: 'inherit' });
 
     console.log("✅ Build finished. Checking output folder:");
     console.log(fs.readdirSync(path.join(appDir, 'dist'))); // Verify it exists!
