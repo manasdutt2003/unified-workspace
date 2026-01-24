@@ -14,9 +14,15 @@ try {
     console.log("📦 (2/3) Installing App Dependencies...");
     execSync('npm install --include=dev', { cwd: appDir, stdio: 'inherit' });
 
-    // 3. Build the App (Explicitly run Vite to avoid recursive 'npm run build' loop)
+    // 3. Build the App (Direct binary execution)
     console.log("🏗️ (3/3) Building Portfolio...");
-    execSync('npx vite build', { cwd: appDir, stdio: 'inherit' });
+    const viteBin = path.join(appDir, 'node_modules', '.bin', 'vite');
+
+    if (process.platform === 'win32') {
+        execSync(`"${viteBin}.cmd" build`, { cwd: appDir, stdio: 'inherit' });
+    } else {
+        execSync(`"${viteBin}" build`, { cwd: appDir, stdio: 'inherit' });
+    }
 
     console.log("✅ Build finished. Checking output folder:");
     console.log(fs.readdirSync(path.join(appDir, 'dist'))); // Verify it exists!
