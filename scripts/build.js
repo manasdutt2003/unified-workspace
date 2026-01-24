@@ -14,15 +14,25 @@ try {
     console.log("📦 (2/3) Installing App Dependencies...");
     execSync('npm install --include=dev', { cwd: appDir, stdio: 'inherit' });
 
-    // 3. Build the App (Direct binary execution)
+    // 3. Build the App (PATH manipulation strategy)
     console.log("🏗️ (3/3) Building Portfolio...");
-    const viteBin = path.join(appDir, 'node_modules', '.bin', 'vite');
 
-    if (process.platform === 'win32') {
-        execSync(`"${viteBin}.cmd" build`, { cwd: appDir, stdio: 'inherit' });
-    } else {
-        execSync(`"${viteBin}" build`, { cwd: appDir, stdio: 'inherit' });
+    // Debug: Check if vite exists
+    try {
+        const binDir = path.join(appDir, 'node_modules', '.bin');
+        console.log("🔍 Checking .bin folder:", binDir);
+        console.log(fs.readdirSync(binDir));
+    } catch (e) {
+        console.log("⚠️ Could not list .bin:", e.message);
     }
+
+    // Add .bin to PATH
+    const env = { ...process.env };
+    const binPath = path.join(appDir, 'node_modules', '.bin');
+    env.PATH = `${binPath}${path.delimiter}${env.PATH}`;
+
+    execSync('vite build', { cwd: appDir, stdio: 'inherit', env: env });
+
 
     console.log("✅ Build finished. Checking output folder:");
     console.log(fs.readdirSync(path.join(appDir, 'dist'))); // Verify it exists!
