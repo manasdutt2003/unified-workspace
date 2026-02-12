@@ -1,0 +1,1 @@
+[2026-02-12T09:05:39.914Z] Enhanced logging verbosity
