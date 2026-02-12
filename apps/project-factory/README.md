@@ -1,9 +1,9 @@
-# Nft Valuation Model 1770876430088
+# Project Factory
 
 ![Active Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Last Commit](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
-**Estimates value of NFTs based on rarity and sales**
+**A cutting-edge technology project.**
 
 ## 🚀 About The Project
 This project is part of a high-frequency automated portfolio exploring the intersection of **Stock Markets** and **Technology**. It is designed to run autonomously, updating its own data and logic daily.

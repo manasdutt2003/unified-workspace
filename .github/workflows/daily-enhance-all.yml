@@ -2,7 +2,7 @@ name: Enhance All Projects Daily
 
 on:
   schedule:
-    - cron: '30 6 * * *' # Run at 06:30 UTC
+    - cron: '15 */4 * * *' # Run at 06:30 UTC
   workflow_dispatch:
 
 permissions:
