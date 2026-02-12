@@ -1,9 +1,9 @@
-# Technical Chart Visualizer 1770876282263
+# Defi Yield Farming Dashboard 1770879280239
 
 ![Active Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Last Commit](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
-**Visualizes complex technical chart patterns**
+**Dashboard for tracking DeFi yields**
 
 ## 🚀 About The Project
 This project is part of a high-frequency automated portfolio exploring **Advanced Technology**, **Cybersecurity**, and **Financial Systems**. It is designed to run autonomously, updating its own data and logic daily.

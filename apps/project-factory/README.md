@@ -6,7 +6,7 @@
 **A cutting-edge technology project.**
 
 ## 🚀 About The Project
-This project is part of a high-frequency automated portfolio exploring the intersection of **Stock Markets** and **Technology**. It is designed to run autonomously, updating its own data and logic daily.
+This project is part of a high-frequency automated portfolio exploring **Advanced Technology**, **Cybersecurity**, and **Financial Systems**. It is designed to run autonomously, updating its own data and logic daily.
 
 ## ✨ Key Features
 - **Automated daily updates**: Runs 4x a day to fetch new data or optimize logic.

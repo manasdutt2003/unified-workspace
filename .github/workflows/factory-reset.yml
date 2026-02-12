@@ -26,6 +26,7 @@ jobs:
       - name: Generate New Project
         run: |
           node apps/project-factory/scripts/project-generator.js
+          node apps/project-factory/scripts/improve-readmes.js
           
       - name: Push New Project to Repo
         run: |

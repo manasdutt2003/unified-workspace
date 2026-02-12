@@ -1,0 +1,1 @@
+{"name":"defi-yield-farming-dashboard-1770879280239","version":"1.0.0","description":"Dashboard for tracking DeFi yields","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}

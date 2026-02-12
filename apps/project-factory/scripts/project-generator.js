@@ -18,7 +18,18 @@ const IDEAS = [
   { name: 'options-pricing-calc', desc: 'Calculates options prices using Black-Scholes' },
   { name: 'technical-chart-visualizer', desc: 'Visualizes complex technical chart patterns' },
   { name: 'defi-yield-farming-dashboard', desc: 'Dashboard for tracking DeFi yields' },
-  { name: 'nft-valuation-model', desc: 'Estimates value of NFTs based on rarity and sales' }
+  { name: 'nft-valuation-model', desc: 'Estimates value of NFTs based on rarity and sales' },
+  // Cybersecurity Projects
+  { name: 'packet-sniffer-pro', desc: 'Network traffic analyzer and packet sniffer' },
+  { name: 'zero-trust-auth-system', desc: 'Demonstration of Zero Trust authentication architecture' },
+  { name: 'iot-vulnerability-scanner', desc: 'Scans local IoT devices for common vulnerabilities' },
+  { name: 'sql-injection-tester', desc: 'Automated tool to test web apps for SQLi vulnerabilities' },
+  { name: 'blockchain-audit-tool', desc: 'Audits smart contracts for common security flaws' },
+  { name: 'network-anomaly-detector', desc: 'Uses AI to detect unusual network traffic patterns' },
+  { name: 'password-strength-analyser', desc: 'Advanced entropy-based password strength estimator' },
+  { name: 'ransomware-simulation', desc: 'Safe simulation of ransomware behavior for educational purposes' },
+  { name: 'secure-chat-protocol', desc: 'End-to-end encrypted chat protocol implementation' },
+  { name: 'ddos-mitigation-sim', desc: 'Simulation of DDoS attack mitigation strategies' }
 ];
 
 async function generateProject() {
