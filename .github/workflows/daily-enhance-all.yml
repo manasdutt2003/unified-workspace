@@ -1,0 +1,57 @@
+name: Enhance All Projects Daily
+
+on:
+  schedule:
+    - cron: '30 6 * * *' # Run at 06:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enhance-all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Enhance All Projects
+        run: |
+          # Iterate over all directories in apps/
+          for d in apps/*; do
+            if [ -d "$d" ]; then
+              echo "Checking $d for enhancement script..."
+              if [ -f "$d/package.json" ]; then
+                # Check if package.json has "enhance" script
+                if grep -q '"enhance":' "$d/package.json"; then
+                  echo "Enhancing $d..."
+                  cd "$d"
+                  # Install dependencies if needed (quietly)
+                  if [ -f "package-lock.json" ]; then
+                     npm ci --silent
+                  else
+                     npm install --silent
+                  fi
+                  
+                  # Run the enhancement script
+                  npm run enhance
+                  
+                  # Go back to root
+                  cd ../..
+                else
+                  echo "No 'enhance' script in $d."
+                fi
+              fi
+            fi
+          done
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add apps/
+          git commit -m "chore: daily mass enhancement [skip ci]" || echo "No changes to commit"
+          git push

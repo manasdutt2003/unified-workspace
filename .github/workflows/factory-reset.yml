@@ -1,0 +1,36 @@
+name: Project Factory - Generate New App
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *' # Run every 3 days
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: |
+          cd apps/project-factory
+          npm install
+          
+      - name: Generate New Project
+        run: |
+          node apps/project-factory/scripts/project-generator.js
+          
+      - name: Push New Project to Repo
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "feat: generated new project via factory [skip ci]" || echo "No changes"
+          git push
