@@ -1,16 +1,16 @@
-name: Stock Data Update
+name: Valuation Model Test
 
 on:
   schedule:
-    # Run at minute 54 past every 2nd hour
-    - cron: '54 */2 * * *'
+    # Run at minute 30 past every 2nd hour
+    - cron: '30 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-data:
+  test-model:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,14 +22,14 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Fetch Stock Data
+    - name: Run Valuation Test
       run: |
-        node fetch_data.js
+        node daily-enhancer.js
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name 'Manas Dutt'
         git config --global user.email 'manasdutt2003@gmail.com'
         git add enhancement_log.txt
-        git commit -m "data: fetch latest stock market data [skip ci]" || echo "No changes to commit"
+        git commit -m "test: verify valuation model with new sample data [skip ci]" || echo "No changes to commit"
         git push

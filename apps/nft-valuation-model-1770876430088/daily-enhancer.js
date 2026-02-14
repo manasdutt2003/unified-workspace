@@ -2,48 +2,44 @@ const fs = require('fs');
 const path = require('path');
 
 const LOG_FILE = path.join(__dirname, 'enhancement_log.txt');
-const FEATURES_FILE = path.join(__dirname, 'features.json');
 
-const ENHANCEMENTS = [
-    "Optimized algorithm performance",
-    "Added new data source integration",
-    "Refactored error handling",
-    "Updated dependency versions",
-    "Improved documentation coverage",
-    "Added unit tests for core module",
-    "Implemented caching mechanism",
-    "Enhanced logging verbosity"
-];
+const COLLECTIONS = ['Azuki', 'BAYC', 'Doodles', 'CloneX', 'Moonbirds'];
+const TRAITS = ['Gold Fur', 'Laser Eyes', 'Blue Beanie', 'Robot Skin', 'Halo'];
 
-function enhance() {
-    const today = new Date().toISOString();
-    const enhancement = ENHANCEMENTS[Math.floor(Math.random() * ENHANCEMENTS.length)];
-
-    // 1. Update Log
-    const logEntry = `[${today}] ${enhancement}\n`;
-    fs.appendFileSync(LOG_FILE, logEntry);
-
-    // 2. Update/Create Features File
-    let features = { lastUpdated: today, enhancements: [] };
-    if (fs.existsSync(FEATURES_FILE)) {
-        try {
-            features = JSON.parse(fs.readFileSync(FEATURES_FILE, 'utf8'));
-        } catch (e) {
-            // ignore error
-        }
+function estimateValue(collection, traits) {
+    // Simplified valuation logic simulation
+    let baseValue = 0;
+    switch (collection) {
+        case 'BAYC': baseValue = 30; break;
+        case 'Azuki': baseValue = 5; break;
+        case 'Doodles': baseValue = 2; break;
+        default: baseValue = 1;
     }
 
-    features.lastUpdated = today;
-    features.enhancements.push({ date: today, action: enhancement });
+    // Rarity multiplier
+    const rarity = traits.length * 1.5;
 
-    // Keep only last 50
-    if (features.enhancements.length > 50) {
-        features.enhancements = features.enhancements.slice(-50);
-    }
+    // Market volatility factor
+    const volatility = (Math.random() * 0.4) + 0.8; // 0.8 to 1.2
 
-    fs.writeFileSync(FEATURES_FILE, JSON.stringify(features, null, 2));
-
-    console.log(`Project enhanced: ${enhancement}`);
+    return (baseValue * rarity * volatility).toFixed(4);
 }
 
-enhance();
+function runEnhancement() {
+    const collection = COLLECTIONS[Math.floor(Math.random() * COLLECTIONS.length)];
+    const traitCount = Math.floor(Math.random() * 3) + 1;
+    const traits = [];
+    for (let i = 0; i < traitCount; i++) {
+        traits.push(TRAITS[Math.floor(Math.random() * TRAITS.length)]);
+    }
+
+    const estimatedValue = estimateValue(collection, traits);
+    const timestamp = new Date().toISOString();
+
+    const logEntry = `[${timestamp}] Valued ${collection} NFT with traits [${traits.join(', ')}]: ${estimatedValue} ETH\n`;
+
+    fs.appendFileSync(LOG_FILE, logEntry);
+    console.log(`Logged new valuation: ${collection} -> ${estimatedValue} ETH`);
+}
+
+runEnhancement();

@@ -1,16 +1,16 @@
-name: Stock Data Update
+name: Template Usage Stats
 
 on:
   schedule:
-    # Run at minute 54 past every 2nd hour
-    - cron: '54 */2 * * *'
+    # Run at minute 36 past every 2nd hour
+    - cron: '36 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-data:
+  update-stats:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,14 +22,14 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Fetch Stock Data
+    - name: Update Usage Stats
       run: |
-        node fetch_data.js
+        node scripts/update_stats.js
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name 'Manas Dutt'
         git config --global user.email 'manasdutt2003@gmail.com'
-        git add enhancement_log.txt
-        git commit -m "data: fetch latest stock market data [skip ci]" || echo "No changes to commit"
+        git add data/template_usage.json
+        git commit -m "chore: update template usage statistics [skip ci]" || echo "No changes to commit"
         git push

@@ -1,16 +1,16 @@
-name: Stock Data Update
+name: Crypto Price Logger
 
 on:
   schedule:
-    # Run at minute 54 past every 2nd hour
-    - cron: '54 */2 * * *'
+    # Run at minute 18 past every 2nd hour
+    - cron: '18 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-data:
+  log-prices:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,14 +22,14 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Fetch Stock Data
+    - name: Log Crypto Prices
       run: |
-        node fetch_data.js
+        node scripts/log_prices.js
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name 'Manas Dutt'
         git config --global user.email 'manasdutt2003@gmail.com'
-        git add enhancement_log.txt
-        git commit -m "data: fetch latest stock market data [skip ci]" || echo "No changes to commit"
+        git add data/price_history.json
+        git commit -m "data: log latest crypto price history [skip ci]" || echo "No changes to commit"
         git push
