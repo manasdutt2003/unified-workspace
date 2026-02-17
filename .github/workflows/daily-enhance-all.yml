@@ -2,14 +2,14 @@ name: Enhance All Projects Daily
 
 on:
   schedule:
-    - cron: '15 */4 * * *' # Run at 06:30 UTC
+    - cron: '*/5 * * * *' # Run every 5 minutes
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  enhance-all:
+  enhance-one-random:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,40 +18,56 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Enhance All Projects
+      - name: Enhance Random Project
         run: |
-          # Iterate over all directories in apps/
+          # Create an array of eligible directories
+          eligible_apps=()
           for d in apps/*; do
-            if [ -d "$d" ]; then
-              echo "Checking $d for enhancement script..."
-              if [ -f "$d/package.json" ]; then
-                # Check if package.json has "enhance" script
-                if grep -q '"enhance":' "$d/package.json"; then
-                  echo "Enhancing $d..."
-                  cd "$d"
-                  # Install dependencies if needed (quietly)
-                  if [ -f "package-lock.json" ]; then
-                     npm ci --silent
-                  else
-                     npm install --silent
-                  fi
-                  
-                  # Run the enhancement script
-                  npm run enhance
-                  
-                  # Go back to root
-                  cd ../..
-                else
-                  echo "No 'enhance' script in $d."
-                fi
+            if [ -d "$d" ] && [ -f "$d/package.json" ]; then
+              if grep -q '"enhance":' "$d/package.json"; then
+                eligible_apps+=("$d")
               fi
             fi
           done
 
-      - name: Commit and Push Changes
-        run: |
+          # Check if any apps were found
+          if [ ${#eligible_apps[@]} -eq 0 ]; then
+            echo "No eligible apps found with 'enhance' script."
+            exit 0
+          fi
+          
+          # Select one random app
+          random_index=$((RANDOM % ${#eligible_apps[@]}))
+          selected_app=${eligible_apps[$random_index]}
+          
+          echo "Selected app for enhancement: $selected_app"
+          
+          # Enhance the selected app
+          cd "$selected_app"
+          
+          # Install dependencies if needed (quietly)
+          if [ -f "package-lock.json" ]; then
+             npm ci --silent
+          else
+             npm install --silent
+          fi
+          
+          # Run the enhancement script
+          npm run enhance
+          
+          # Go back to root
+          cd ../..
+
+          # Configure git
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add apps/
-          git commit -m "chore: daily mass enhancement [skip ci]" || echo "No changes to commit"
-          git push
+          
+          # Check for changes
+          if [[ -n $(git status -s) ]]; then
+            git add "$selected_app"
+            git commit -m "chore: enhance $(basename "$selected_app") [skip ci]"
+            git push
+            echo "Successfully pushed changes for $(basename "$selected_app")"
+          else
+            echo "No changes detected for $(basename "$selected_app")"
+          fi
