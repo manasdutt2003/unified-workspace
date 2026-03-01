@@ -1,0 +1,1 @@
+{"name":"packet-sniffer-pro-1772332644129","version":"1.0.0","description":"Network traffic analyzer and packet sniffer","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
