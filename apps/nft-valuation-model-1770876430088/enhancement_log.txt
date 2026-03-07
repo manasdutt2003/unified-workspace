@@ -96,3 +96,4 @@
 [2026-03-06T16:20:58.112Z] Valued CloneX NFT with traits [Gold Fur, Gold Fur, Blue Beanie]: 4.1803 ETH
 [2026-03-06T17:44:54.856Z] Valued Azuki NFT with traits [Halo]: 7.6883 ETH
 [2026-03-07T11:49:22.701Z] Valued Doodles NFT with traits [Halo, Gold Fur]: 5.8393 ETH
+[2026-03-07T13:27:10.061Z] Valued Moonbirds NFT with traits [Laser Eyes, Robot Skin, Laser Eyes]: 4.2288 ETH
