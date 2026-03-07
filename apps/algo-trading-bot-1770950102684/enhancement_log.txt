@@ -88,3 +88,4 @@
 [2026-03-06T22:49:59.898Z] Updated dependency versions
 [2026-03-06T23:14:32.561Z] Added unit tests for core module
 [2026-03-07T08:25:32.501Z] Added unit tests for core module
+[2026-03-07T08:52:27.424Z] Refactored error handling
