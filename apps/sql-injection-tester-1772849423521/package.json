@@ -1,0 +1,1 @@
+{"name":"sql-injection-tester-1772849423521","version":"1.0.0","description":"Automated tool to test web apps for SQLi vulnerabilities","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
