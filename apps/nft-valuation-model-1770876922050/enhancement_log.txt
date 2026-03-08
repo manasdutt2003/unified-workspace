@@ -96,3 +96,4 @@
 [2026-03-07T19:45:47.363Z] Added unit tests for core module
 [2026-03-07T21:36:30.541Z] Added unit tests for core module
 [2026-03-07T23:54:18.159Z] Updated dependency versions
+[2026-03-08T03:37:14.104Z] Enhanced logging verbosity
