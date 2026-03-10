@@ -110,3 +110,4 @@
 [2026-03-09T17:27:27.763Z] Valued Azuki NFT with traits [Blue Beanie, Laser Eyes, Laser Eyes]: 18.9864 ETH
 [2026-03-09T22:59:39.804Z] Valued CloneX NFT with traits [Laser Eyes, Robot Skin, Laser Eyes]: 5.2275 ETH
 [2026-03-10T13:41:15.376Z] Valued Doodles NFT with traits [Robot Skin, Laser Eyes, Laser Eyes]: 10.0369 ETH
+[2026-03-10T15:32:12.789Z] Valued Moonbirds NFT with traits [Halo, Halo, Laser Eyes]: 4.2691 ETH
