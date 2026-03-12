@@ -113,3 +113,4 @@
 [2026-03-10T23:42:50.871Z] Updated dependency versions
 [2026-03-11T17:42:14.632Z] Implemented caching mechanism
 [2026-03-11T18:33:43.359Z] Added unit tests for core module
+[2026-03-12T00:47:45.284Z] Enhanced logging verbosity
