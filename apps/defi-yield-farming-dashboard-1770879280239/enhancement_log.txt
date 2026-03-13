@@ -125,3 +125,4 @@
 [2026-03-13T01:10:25.703Z] Added unit tests for core module
 [2026-03-13T07:36:46.422Z] Added unit tests for core module
 [2026-03-13T08:54:46.901Z] Refactored error handling
+[2026-03-13T13:20:05.812Z] Enhanced logging verbosity
