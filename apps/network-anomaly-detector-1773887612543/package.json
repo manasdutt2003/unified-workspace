@@ -1,0 +1,1 @@
+{"name":"network-anomaly-detector-1773887612543","version":"1.0.0","description":"Uses AI to detect unusual network traffic patterns","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
