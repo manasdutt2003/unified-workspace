@@ -1,0 +1,1 @@
+{"name":"ai-stock-predictor-1774146846993","version":"1.0.0","description":"Predicts stock movements using LSTM models","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
