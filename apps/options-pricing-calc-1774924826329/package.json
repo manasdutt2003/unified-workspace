@@ -1,0 +1,1 @@
+{"name":"options-pricing-calc-1774924826329","version":"1.0.0","description":"Calculates options prices using Black-Scholes","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
