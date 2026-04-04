@@ -9,3 +9,4 @@
 [2026-03-30T07:09:03.091Z] Added unit tests for core module
 [2026-04-02T19:56:09.969Z] Added new data source integration
 [2026-04-04T07:18:24.967Z] Added new data source integration
+[2026-04-04T12:24:29.472Z] Enhanced logging verbosity
