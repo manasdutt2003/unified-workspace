@@ -1,0 +1,1 @@
+{"name":"ransomware-simulation-1775269780550","version":"1.0.0","description":"Safe simulation of ransomware behavior for educational purposes","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
