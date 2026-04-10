@@ -16,3 +16,4 @@
 [2026-04-08T21:57:59.145Z] Refactored error handling
 [2026-04-09T23:22:27.331Z] Improved documentation coverage
 [2026-04-10T20:20:11.060Z] Enhanced logging verbosity
+[2026-04-10T22:06:07.248Z] Added unit tests for core module
