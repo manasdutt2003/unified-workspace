@@ -163,3 +163,4 @@
 [2026-04-08T22:38:13.830Z] Valued Moonbirds NFT with traits [Blue Beanie, Gold Fur, Blue Beanie]: 5.0434 ETH
 [2026-04-10T20:58:16.421Z] Valued Moonbirds NFT with traits [Halo, Laser Eyes, Laser Eyes]: 5.1257 ETH
 [2026-04-11T11:17:27.580Z] Valued Moonbirds NFT with traits [Gold Fur, Gold Fur, Laser Eyes]: 4.1226 ETH
+[2026-04-11T16:57:04.551Z] Valued Doodles NFT with traits [Laser Eyes]: 3.4490 ETH
