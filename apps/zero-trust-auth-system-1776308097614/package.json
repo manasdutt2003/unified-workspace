@@ -1,0 +1,1 @@
+{"name":"zero-trust-auth-system-1776308097614","version":"1.0.0","description":"Demonstration of Zero Trust authentication architecture","scripts":{"start":"node index.js","enhance":"node daily-enhancer.js"},"dependencies":{"axios":"^1.6.0","moment":"^2.29.4"}}
