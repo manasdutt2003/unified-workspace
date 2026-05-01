@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "2026-04-30T14:55:32.015Z",
+  "lastUpdated": "2026-05-01T14:42:11.697Z",
   "enhancements": [
-    {
-      "date": "2026-03-17T14:02:10.885Z",
-      "action": "Updated dependency versions"
-    },
     {
       "date": "2026-03-17T15:08:07.730Z",
       "action": "Improved documentation coverage"
@@ -200,6 +196,10 @@
     {
       "date": "2026-04-30T14:55:32.015Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-05-01T14:42:11.697Z",
+      "action": "Added unit tests for core module"
     }
   ]
 }
