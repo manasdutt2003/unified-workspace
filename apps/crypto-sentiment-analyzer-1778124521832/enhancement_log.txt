@@ -1,1 +1,2 @@
 [2026-05-07T13:04:14.130Z] Added unit tests for core module
+[2026-05-08T18:55:59.879Z] Enhanced logging verbosity
