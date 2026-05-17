@@ -183,3 +183,4 @@
 [2026-05-11T08:34:24.070Z] Valued Moonbirds NFT with traits [Gold Fur, Gold Fur, Robot Skin]: 4.3423 ETH
 [2026-05-16T14:46:30.826Z] Valued Moonbirds NFT with traits [Laser Eyes, Gold Fur, Halo]: 4.4187 ETH
 [2026-05-16T18:34:14.995Z] Valued BAYC NFT with traits [Gold Fur]: 43.3936 ETH
+[2026-05-17T19:47:21.210Z] Valued Azuki NFT with traits [Halo]: 6.8778 ETH
