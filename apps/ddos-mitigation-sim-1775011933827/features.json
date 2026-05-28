@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T22:46:37.791Z",
+  "lastUpdated": "2026-05-28T09:02:15.387Z",
   "enhancements": [
     {
       "date": "2026-04-01T12:39:14.141Z",
@@ -144,6 +144,10 @@
     {
       "date": "2026-05-25T22:46:37.791Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-05-28T09:02:15.387Z",
+      "action": "Improved documentation coverage"
     }
   ]
 }
