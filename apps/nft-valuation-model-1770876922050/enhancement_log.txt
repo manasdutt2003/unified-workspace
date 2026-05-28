@@ -184,3 +184,4 @@
 [2026-05-17T17:37:43.442Z] Enhanced logging verbosity
 [2026-05-26T05:46:25.998Z] Added unit tests for core module
 [2026-05-26T16:03:30.565Z] Updated dependency versions
+[2026-05-28T05:39:22.115Z] Refactored error handling
