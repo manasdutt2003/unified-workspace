@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "2026-05-23T09:17:02.925Z",
+  "lastUpdated": "2026-06-01T20:38:44.477Z",
   "enhancements": [
-    {
-      "date": "2026-03-29T07:39:54.005Z",
-      "action": "Enhanced logging verbosity"
-    },
     {
       "date": "2026-03-29T16:18:40.926Z",
       "action": "Added new data source integration"
@@ -200,6 +196,10 @@
     {
       "date": "2026-05-23T09:17:02.925Z",
       "action": "Updated dependency versions"
+    },
+    {
+      "date": "2026-06-01T20:38:44.477Z",
+      "action": "Refactored error handling"
     }
   ]
 }
