@@ -191,3 +191,4 @@
 [2026-05-25T17:54:32.067Z] Valued CloneX NFT with traits [Blue Beanie, Blue Beanie]: 2.8734 ETH
 [2026-06-07T22:31:31.022Z] Valued Doodles NFT with traits [Robot Skin]: 3.3329 ETH
 [2026-06-08T11:28:52.940Z] Valued BAYC NFT with traits [Blue Beanie, Laser Eyes, Gold Fur]: 134.2315 ETH
+[2026-06-09T18:30:24.696Z] Valued Moonbirds NFT with traits [Laser Eyes, Blue Beanie]: 2.7680 ETH
