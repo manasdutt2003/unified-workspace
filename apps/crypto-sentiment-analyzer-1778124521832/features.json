@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T19:22:20.356Z",
+  "lastUpdated": "2026-06-14T23:53:33.282Z",
   "enhancements": [
     {
       "date": "2026-05-07T13:04:14.130Z",
@@ -48,6 +48,10 @@
     {
       "date": "2026-06-12T19:22:20.356Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-06-14T23:53:33.282Z",
+      "action": "Added unit tests for core module"
     }
   ]
 }
