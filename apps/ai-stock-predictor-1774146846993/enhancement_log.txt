@@ -65,3 +65,4 @@
 [2026-06-02T20:12:52.812Z] Improved documentation coverage
 [2026-06-06T08:07:24.842Z] Added unit tests for core module
 [2026-06-13T04:44:25.381Z] Added unit tests for core module
+[2026-06-14T10:04:52.374Z] Refactored error handling
