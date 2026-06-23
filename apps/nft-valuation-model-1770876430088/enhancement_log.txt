@@ -195,3 +195,4 @@
 [2026-06-13T22:15:42.943Z] Valued BAYC NFT with traits [Halo]: 49.3186 ETH
 [2026-06-17T15:52:09.441Z] Valued Azuki NFT with traits [Robot Skin, Gold Fur]: 14.4914 ETH
 [2026-06-20T20:56:04.095Z] Valued Doodles NFT with traits [Blue Beanie]: 2.4395 ETH
+[2026-06-23T18:27:08.611Z] Valued Moonbirds NFT with traits [Robot Skin]: 1.5443 ETH
