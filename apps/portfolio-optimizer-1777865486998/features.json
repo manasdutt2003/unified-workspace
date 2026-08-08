@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25T00:59:26.362Z",
+  "lastUpdated": "2026-08-08T12:02:28.473Z",
   "enhancements": [
     {
       "date": "2026-05-04T21:44:02.035Z",
@@ -72,6 +72,10 @@
     {
       "date": "2026-07-25T00:59:26.362Z",
       "action": "Enhanced logging verbosity"
+    },
+    {
+      "date": "2026-08-08T12:02:28.473Z",
+      "action": "Updated dependency versions"
     }
   ]
 }
