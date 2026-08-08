@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "2026-07-29T16:40:14.383Z",
+  "lastUpdated": "2026-08-08T13:04:52.305Z",
   "enhancements": [
-    {
-      "date": "2026-03-31T23:19:21.958Z",
-      "action": "Improved documentation coverage"
-    },
     {
       "date": "2026-04-01T18:10:43.252Z",
       "action": "Enhanced logging verbosity"
@@ -200,6 +196,10 @@
     {
       "date": "2026-07-29T16:40:14.383Z",
       "action": "Refactored error handling"
+    },
+    {
+      "date": "2026-08-08T13:04:52.305Z",
+      "action": "Added unit tests for core module"
     }
   ]
 }
