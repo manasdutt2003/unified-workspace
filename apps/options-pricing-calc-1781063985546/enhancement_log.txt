@@ -9,3 +9,4 @@
 [2026-07-29T13:16:11.722Z] Improved documentation coverage
 [2026-07-30T17:45:14.315Z] Implemented caching mechanism
 [2026-08-02T04:26:28.163Z] Implemented caching mechanism
+[2026-08-08T17:46:41.088Z] Added unit tests for core module
