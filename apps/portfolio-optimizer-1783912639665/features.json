@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T18:12:35.241Z",
+  "lastUpdated": "2026-08-10T21:35:52.836Z",
   "enhancements": [
     {
       "date": "2026-07-14T20:19:40.797Z",
@@ -24,6 +24,10 @@
     {
       "date": "2026-08-01T18:12:35.241Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-08-10T21:35:52.836Z",
+      "action": "Updated dependency versions"
     }
   ]
 }
