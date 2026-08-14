@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "2026-08-08T11:15:05.121Z",
+  "lastUpdated": "2026-08-14T09:00:52.257Z",
   "enhancements": [
-    {
-      "date": "2026-04-08T15:42:47.447Z",
-      "action": "Added unit tests for core module"
-    },
     {
       "date": "2026-04-12T15:00:51.505Z",
       "action": "Refactored error handling"
@@ -200,6 +196,10 @@
     {
       "date": "2026-08-08T11:15:05.121Z",
       "action": "Added unit tests for core module"
+    },
+    {
+      "date": "2026-08-14T09:00:52.257Z",
+      "action": "Updated dependency versions"
     }
   ]
 }
