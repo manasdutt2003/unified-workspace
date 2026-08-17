@@ -17,3 +17,4 @@
 [2026-08-16T18:50:29.911Z] Enhanced logging verbosity
 [2026-08-16T21:49:56.909Z] Implemented caching mechanism
 [2026-08-17T15:51:00.600Z] Implemented caching mechanism
+[2026-08-17T17:57:39.512Z] Added unit tests for core module
