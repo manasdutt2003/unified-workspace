@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T17:02:23.340Z",
+  "lastUpdated": "2026-08-21T13:43:02.057Z",
   "enhancements": [
     {
       "date": "2026-07-25T14:00:23.093Z",
@@ -28,6 +28,10 @@
     {
       "date": "2026-08-17T17:02:23.340Z",
       "action": "Improved documentation coverage"
+    },
+    {
+      "date": "2026-08-21T13:43:02.057Z",
+      "action": "Added unit tests for core module"
     }
   ]
 }
