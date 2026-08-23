@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T14:26:36.621Z",
+  "lastUpdated": "2026-08-23T08:12:25.247Z",
   "enhancements": [
     {
       "date": "2026-06-20T15:08:27.847Z",
@@ -60,6 +60,10 @@
     {
       "date": "2026-08-22T14:26:36.621Z",
       "action": "Improved documentation coverage"
+    },
+    {
+      "date": "2026-08-23T08:12:25.247Z",
+      "action": "Updated dependency versions"
     }
   ]
 }
