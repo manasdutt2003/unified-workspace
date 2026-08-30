@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T16:01:10.641Z",
+  "lastUpdated": "2026-08-30T00:36:58.557Z",
   "enhancements": [
     {
       "date": "2026-06-13T18:18:45.158Z",
@@ -112,6 +112,10 @@
     {
       "date": "2026-08-23T16:01:10.641Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-08-30T00:36:58.557Z",
+      "action": "Enhanced logging verbosity"
     }
   ]
 }
