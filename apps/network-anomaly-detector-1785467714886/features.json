@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T23:57:38.159Z",
+  "lastUpdated": "2026-08-31T20:52:52.154Z",
   "enhancements": [
     {
       "date": "2026-08-02T22:26:06.335Z",
@@ -44,6 +44,10 @@
     {
       "date": "2026-08-25T23:57:38.159Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-08-31T20:52:52.154Z",
+      "action": "Refactored error handling"
     }
   ]
 }
