@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "2026-08-25T10:17:02.187Z",
+  "lastUpdated": "2026-09-17T16:49:59.812Z",
   "enhancements": [
-    {
-      "date": "2026-04-04T07:18:24.967Z",
-      "action": "Added new data source integration"
-    },
     {
       "date": "2026-04-04T12:24:29.472Z",
       "action": "Enhanced logging verbosity"
@@ -200,6 +196,10 @@
     {
       "date": "2026-08-25T10:17:02.187Z",
       "action": "Added new data source integration"
+    },
+    {
+      "date": "2026-09-17T16:49:59.812Z",
+      "action": "Added unit tests for core module"
     }
   ]
 }
