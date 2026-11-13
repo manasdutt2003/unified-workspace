@@ -24,9 +24,9 @@ Run one app: `cd apps/<name> && npm start`.
 
 ## Automation
 
-Two workflows commit to this repository on a schedule:
+Two workflows can commit to this repository, and both are manual-only (**Actions -> Run workflow**); their schedules were removed:
 
-- **Enhance All Projects Daily** runs an app's `enhance` script on a timer and commits the result.
-- **Project Factory** generates a new app every three days.
+- **Enhance All Projects Daily** runs one app's `enhance` script and commits the result.
+- **Project Factory** generates a new app.
 
-These commits are produced by scripts, which is why the history is very large. The "enhancements" append log lines and feature entries; they do not change app behaviour. Disable the schedules in `.github/workflows/` if you do not want that.
+The "enhancements" append log lines and feature entries; they do not change app behaviour. The very large commit history comes from when these ran every few minutes.

@@ -1,8 +1,6 @@
 name: Project Factory - Generate New App
 
 on:
-  schedule:
-    - cron: '0 0 */3 * *' # Run every 3 days
   workflow_dispatch:
 
 permissions:

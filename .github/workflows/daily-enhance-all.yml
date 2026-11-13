@@ -1,8 +1,6 @@
 name: Enhance All Projects Daily
 
 on:
-  schedule:
-    - cron: '*/5 * * * *' # Run every 5 minutes
   workflow_dispatch:
 
 permissions:
